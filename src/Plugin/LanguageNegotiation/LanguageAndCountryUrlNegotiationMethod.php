@@ -211,7 +211,7 @@ class LanguageAndCountryUrlNegotiationMethod extends LanguageNegotiationMethodBa
 
     // Language can be passed as an option, or we go for current URL language.
     if (empty($options['language'])) {
-      $options['language'] = $this->languageManager->getCurrentLanguage(LanguageInterface::TYPE_URL);
+      $options['language'] = $this->languageManager->getLanguage($this->getLangcode($request));
     }
     elseif (is_string($options['language']) && !empty($languages[$options['language']])) {
       $options['language'] = $this->languageManager->getLanguage($options['language']);
