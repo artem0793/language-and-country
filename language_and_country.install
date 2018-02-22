@@ -1,0 +1,37 @@
+<?php
+
+/**
+ * @file
+ * Contains language_and_country.install.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function language_and_country_install() {
+  global $config;
+
+  $config['content_directory'] = __DIR__ . '/content';
+
+  $importer = \Drupal::service('default_content_deploy.importer');
+
+  $importer->deployContent();
+
+  $cfg = \Drupal::configFactory()->getEditable('language.types');
+  $data = $cfg->get('negotiation');
+  $data['language_interface']['enabled'] = [
+    'language-and-country-url' => -8,
+    'language-selected' => -12,
+  ];
+  $data['language_interface']['method_weights'] = [
+    'language-user-admin' => -10,
+    'language-url' => -8,
+    'language-and-country-url' => -8,
+    'language-session' => -6,
+    'language-user' => -4,
+    'language-browser' => -2,
+    'language-selected' => 12,
+  ];
+  $cfg->set('negotiation', $data);
+  $cfg->save();
+}

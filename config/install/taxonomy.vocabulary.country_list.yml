@@ -1,0 +1,9 @@
+uuid: aa28663f-f78e-400e-a7d5-cd1edfe1a52c
+langcode: en
+status: true
+dependencies: {  }
+name: 'Country list'
+vid: country_list
+description: 'The first country will be default'
+hierarchy: 0
+weight: 0

@@ -1,0 +1,9 @@
+uuid: fdd3ef72-15fb-4472-a9c6-4c93513b5265
+langcode: en
+status: true
+dependencies: {  }
+id: taxonomy_vocabulary_country_list
+action: page_not_found
+allow_override: 0
+redirect: ''
+redirect_code: 301

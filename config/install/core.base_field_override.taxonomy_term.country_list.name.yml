@@ -1,0 +1,18 @@
+uuid: 145a1a72-ce9e-48ac-82fd-b4ef81514838
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.country_list
+id: taxonomy_term.country_list.name
+field_name: name
+entity_type: taxonomy_term
+bundle: country_list
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

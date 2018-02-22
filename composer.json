@@ -1,0 +1,17 @@
+{
+  "name": "drupal/language_and_country",
+  "description": "Language and Country to URL",
+  "type": "drupal-module",
+  "authors": [
+    {
+      "name": "Artem Vilkov",
+      "email": "artem0793@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.1.0",
+    "drupal/default_content_deploy": "^1.0@alpha",
+    "drupal/default_content": "1.0-alpha7",
+    "drupal/rabbit_hole": "^1.0@beta"
+  }
+}

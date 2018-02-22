@@ -1,0 +1,30 @@
+uuid: 4d1add81-2532-4834-985f-f33855b6ba85
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - language_and_country
+  theme:
+    - bartik
+id: countryswitcher
+theme: bartik
+region: header
+weight: 0
+provider: null
+plugin: country_language_block
+settings:
+  id: country_language_block
+  label: 'Country switcher'
+  provider: language_and_country
+  label_display: visible
+visibility:
+  language:
+    id: language
+    langcodes:
+      en: en
+      ru: ru
+      uk: uk
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'

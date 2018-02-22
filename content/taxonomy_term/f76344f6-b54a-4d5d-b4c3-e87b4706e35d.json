@@ -1,0 +1,68 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/taxonomy\/term\/2?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/country_list"
+        }
+    },
+    "tid": [
+        {
+            "value": 2
+        }
+    ],
+    "uuid": [
+        {
+            "value": "f76344f6-b54a-4d5d-b4c3-e87b4706e35d"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "vid": [
+        {
+            "target_id": "country_list"
+        }
+    ],
+    "name": [
+        {
+            "value": "Ukraine",
+            "lang": "en"
+        }
+    ],
+    "weight": [
+        {
+            "value": 2
+        }
+    ],
+    "changed": [
+        {
+            "value": "2018-02-22T15:10:47+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "path": [
+        {
+            "alias": null,
+            "pid": null,
+            "langcode": "en",
+            "lang": "en"
+        }
+    ],
+    "field_country_code": [
+        {
+            "value": "ua"
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains language_and_country.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function language_and_country_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the language_negotiation module.
+    case 'help.page.language_and_country':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Provides possibility to display to URL Country code with language') . '</p>';
+      return $output;
+
+    default:
+  }
+}
